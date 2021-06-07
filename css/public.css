@@ -1,0 +1,322 @@
+.type-area {
+  width: 1180px;
+  margin: 0 auto;
+}
+/* 头部 */
+#header {
+  height: 80px;
+  background: white;
+  margin: 0 auto 30px;
+  position: relative;
+}
+#header .user {
+  display: none;
+  position: absolute;
+  width: 110px;
+  right: 140px;
+  bottom: -233px;
+  z-index: 1;
+}
+#header .user p {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  left: 64px;
+}
+#header .user p img {
+  width: 100%;
+}
+#header .user ul {
+  opacity: 0;
+  width: 110px;
+  height: 256px;
+  background-image: url(../img/login/jx.png);
+  background-size: cover;
+  margin: 0;
+  padding-top: 19px;
+  box-sizing: border-box;
+}
+#header .user ul li {
+  width: 100%;
+  line-height: 36px;
+  height: 36px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#header .user ul li:first-child {
+  font-weight: bold;
+}
+#header h1 {
+  margin-top: 14px;
+  float: left;
+}
+#header ul {
+  float: left;
+  width: 371px;
+  margin: 0 129px 0 116px;
+}
+#header ul li {
+  float: left;
+  width: 80px;
+  margin-right: 12px;
+  text-align: center;
+  color: #333333;
+  font-weight: bold;
+  font-size: 16px;
+  height: 80px;
+  line-height: 80px;
+}
+#header ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+#header ul li a.active {
+  color: white;
+  box-sizing: border-box;
+  background: #80c4ae;
+}
+#header .search {
+  width: 280px;
+  height: 36px;
+  border: 1px solid #80c4ae;
+  float: left;
+  margin-top: 22px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+#header .search span {
+  display: inline-block;
+  width: 67px;
+  height: 100%;
+  text-align: center;
+  line-height: 36px;
+  color: #80c4ae;
+  border-right: 1px solid #80c4ae;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#header .search input {
+  width: 180px;
+}
+#header .search a {
+  color: #80c4ae;
+  font-size: 20px;
+}
+#header .login {
+  float: left;
+  color: #333;
+  line-height: 80px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+#header .login a {
+  font-size: 12px;
+  color: #333;
+}
+#header .login a:nth-child(1) {
+  margin-left: 22px;
+}
+/* 尾部 */
+#foot {
+  height: 275px;
+  background: #333333;
+  margin-top: 97px;
+}
+#foot .foot-area p {
+  color: #f8f8f8;
+}
+#foot .foot-area p:nth-child(1) {
+  padding: 76px 0 0 57px;
+  cursor: pointer;
+}
+#foot .foot-area p:nth-child(2) {
+  padding: 25px 0 0 117px;
+}
+#foot .foot-area p:nth-child(3) {
+  padding: 25px 0 0 152px;
+}
+#foot .foot-area p:nth-child(4) {
+  padding: 25px 0 0 277px;
+}
+/* 登录、注册 */
+#login {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  top: 0;
+}
+#login .login,
+#login .enroll {
+  width: 520px;
+  height: 520px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -265px;
+  margin-top: -265px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  display: none;
+}
+#login .login .logo {
+  width: 135px;
+  margin: 30px auto;
+  display: block;
+}
+#login .login .close {
+  font-size: 22px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #999;
+  cursor: pointer;
+}
+#login .login p {
+  font-size: 18px;
+  margin-top: 50px;
+}
+#login .login p:after,
+#login .login p:before {
+  content: '';
+  width: 135px;
+  height: 1px;
+  background: #ececec;
+  display: inline-block;
+  vertical-align: middle;
+}
+#login .login .p1:before {
+  margin-right: 36px;
+}
+#login .login form {
+  margin-top: 30px;
+}
+#login .login form input {
+  width: 300px;
+  height: 40px;
+  border: #80c4ae 1px solid;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding-left: 24px;
+  box-sizing: border-box;
+  line-height: 40px;
+}
+#login .login form input[type=submit] {
+  background: #74c6b3;
+  font-size: 16px;
+  color: #fff;
+  padding: 0;
+}
+#login .login span {
+  color: #74c6b3;
+}
+#login .login .bt {
+  margin-right: 120px;
+}
+#login .login em {
+  color: #4f4f4f;
+}
+#login .login .p2:after {
+  margin-left: 15px;
+}
+#login .login .p2:before {
+  margin-right: 15px;
+}
+#login .login .xiaologo {
+  width: 36px;
+  margin: 25px 15px 0;
+}
+#login .login .active {
+  display: block;
+}
+#login .enroll .logo {
+  width: 135px;
+  margin: 30px auto;
+  display: block;
+}
+#login .enroll .close {
+  font-size: 22px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #999;
+  cursor: pointer;
+}
+#login .enroll p {
+  font-size: 18px;
+  margin-top: 30px;
+}
+#login .enroll p:after,
+#login .enroll p:before {
+  content: '';
+  width: 135px;
+  height: 1px;
+  background: #ececec;
+  display: inline-block;
+  vertical-align: middle;
+}
+#login .enroll p:after {
+  margin-left: 36px;
+}
+#login .enroll p:before {
+  margin-right: 36px;
+}
+#login .enroll form {
+  margin-top: 30px;
+}
+#login .enroll form input {
+  width: 300px;
+  height: 40px;
+  border: #80c4ae 1px solid;
+  border-radius: 5px;
+  padding-left: 24px;
+  line-height: 40px;
+  box-sizing: border-box;
+}
+#login .enroll form input[type=submit] {
+  background: #74c6b3;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 0;
+}
+#login .enroll form .code {
+  width: 150px;
+  vertical-align: middle;
+}
+#login .enroll form div {
+  line-height: 30px;
+  width: 300px;
+  height: 30px;
+  text-align: left;
+  margin-left: 128px;
+  color: #9d9d9d;
+  opacity: 0;
+}
+#login .enroll form div.tip {
+  opacity: 1;
+}
+#login .enroll form strong {
+  width: 150px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+}
+#login .enroll span {
+  color: #74c6b3;
+}
+#login .enroll .bt {
+  margin: 0 52px 0 10px;
+  color: #4f4f4f;
+  vertical-align: middle;
+}
+#login .enroll em {
+  color: #4f4f4f;
+  margin-right: 10px;
+}
