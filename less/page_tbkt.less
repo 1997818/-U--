@@ -1,0 +1,157 @@
+@import url(./public.less);
+
+/* boby */
+#body {
+    .ul1 {
+        margin-bottom: 50px;
+        li {            
+            &>span {
+                font-size: 16px;
+                margin-right: 20px;
+                display: inline-block;
+                width: 80px;                
+            }
+            .special{
+                vertical-align: top;
+            }
+            em {
+                width: 180px;
+                height: 40px;
+                display: inline-block;
+                border: 1px solid #80c4ae;
+                box-sizing: border-box;
+                font-size: 16px;
+                padding-left: 16px;
+                line-height: 40px;
+                margin: 0 20px 20px 0;
+
+                &>span {
+                    color: #80c4ae;
+                    margin-left: 89px;
+                }
+            }
+            p {
+                max-width: 1054px;
+                display: inline-block;
+                
+                b {
+                    margin: 0 50px 25px 25px;
+                    display: inline-block;
+                    cursor: pointer;
+                    width: 50px;
+                    height: 25px;
+                    text-align: center;
+                    line-height: 25px;
+                    border-radius: 5px;
+                    &.active{
+                        background: @coloer;
+                        color: #fff;
+                    }
+                    &:nth-child(11) {
+                        margin: 0 20px 25px 25px;
+                    }
+                }
+
+            }
+
+        }
+    }
+    .shop {
+        ul {
+            height: auto;
+            li {
+                width: 380px;
+                height: 256px;
+                float: left;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+                &:nth-child(3n){
+                    margin-right: 0;
+                }
+                div {
+                    position: relative;
+                    img {
+                        display: block;
+                        width: 380px;
+                    }
+                    span {
+                        background: rgba(0, 0, 0, .4);
+                        position: absolute;
+                        color: #fff;
+                    }    
+                    .people {
+                        bottom: 0;
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding: 10px 173px 10px 18px;
+                    }
+    
+                    .learn {
+                        top: 0;
+                        padding: 10px 18px;
+                        box-sizing: border-box;
+                        border-bottom-right-radius: 20px;
+                    }
+                }
+                p {
+                    font-size: 14px;
+                    color: #333;
+                    padding-top: 12px;
+                    padding: 12px 10px 0px 10px;
+                    height: 60px;
+                    background: white;
+                    position: relative;
+                    .span1 {
+                        font-size: 12px;
+                        color: #333;
+                        display: block;
+                        padding-top: 12px;
+                    }
+                    a {
+                        font-size: 16px;
+                        color: white;
+                        padding: 8px 16px 8px 16px;
+                        background: #80c4ae;
+                        border-radius: 5px;
+                        position: absolute;
+                        right: 5px;
+                        bottom: 10px;
+    
+                        .span1 {
+                            font-size: 14px;
+                            color: white;
+                            position: absolute;
+                        }
+                    }
+    
+                }
+            }
+        }
+        .footer {
+            margin: 50px auto;
+            text-align: center;
+            span {
+                background: rgb(167, 165, 165);
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+                text-align: center;
+                line-height: 40px;   
+                &:first-child,
+                &:last-child {
+                    width: 90px;
+                    height: 40px;
+                }
+                &.active{
+                    background: @coloer;
+                }
+            }
+    
+        }
+    }
+
+    
+}
+

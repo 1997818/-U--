@@ -1,0 +1,456 @@
+@import url(./public.less);
+
+
+#header {
+    margin: 0 auto 60px;
+}
+
+#body {
+    background: #fafafa;
+
+    .top {
+        height: 580px;
+        position: relative;
+        overflow: hidden;
+
+        .fp {
+            position: absolute;
+            top: -36px;
+
+            a {
+                margin-right: 60px;
+                font-size: 14px;
+
+                &:nth-child(1):after,
+                &:nth-child(2):after {
+                    content: ">";
+                    position: absolute;
+                    color: #030303;
+                    margin-left: 32px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .left {
+            float: left;
+            width: 860px;
+            height: 580px;
+            padding: 20px;
+            box-shadow: 0 0 20px #f1f1f1;
+            box-sizing: border-box;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            video {
+                width: 100%;
+                height: 100%;
+                display: none;
+            }
+        }
+
+        /*详情区  */
+        .right {
+            // display: none;
+            float: left;
+            margin-left: 40px;
+            padding-top: 75px;
+            height: auto;
+
+            h2 {
+                font-size: 22px;
+                color: #333;
+                font-weight: bold;
+                margin-bottom: 28px;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 18px;
+                    font-size: 14px;
+                }
+            }
+
+            p {
+                margin-bottom: 18px;
+
+                span {
+                    color: #ff6666;
+                }
+
+                &:last-child {
+                    width: 260px;
+                    height: 48px;
+                    background: @coloer;
+                    padding-left: 16px;
+                    border-radius: 5px;
+
+                    a {
+                        font-size: 16px;
+                        color: #fff;
+                        line-height: 48px;
+
+                        &:nth-child(1) {
+                            margin-right: 32px;
+                            border-right: 1px solid #fff;
+                            padding-right: 16px;
+                        }
+                    }
+                }
+            }
+
+            b {
+                font-size: 26px;
+                color: @coloer;
+                font-weight: bold;
+                margin-top: 70px;
+                display: inline-block;
+
+            }
+
+            strong {
+                display: inline-block;
+                width: 130px;
+                height: 50px;
+                border: 2px solid @coloer;
+                box-sizing: border-box;
+                text-align: center;
+                line-height: 50px;
+                color: @coloer;
+                margin: 70px 0 11px 32px;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+
+        }
+
+        /*  讨论区  */
+        .right1 {
+            width: 304px;
+            float: left;
+            margin-left: 15px;
+            padding-top: 20px;
+            height: 580px;
+            box-sizing: border-box;
+            display: none;
+            p {
+                margin-left: 18px;
+                margin-bottom: 24px;
+                border-bottom: 1px solid #e0e0e0;
+
+                .active {
+                    background: @coloer;
+                    color: #fff;
+                }
+
+                span {
+                    display: inline-block;
+                    width: 80px;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                }
+            }
+
+            .directory {
+                display: block;
+                h4 {
+                    padding-left: 18px;
+                    margin-bottom: 16px;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+
+                ul {
+                    .active {
+                        background: #e1efeb;
+                    }
+
+                    li {
+                        width: 100%;
+                        padding-left: 18px;
+                        height: 40px;
+                        margin-bottom: 15px;
+                        line-height: 40px;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .talk {
+                padding-left: 18px;
+                display: none;
+                &.cur {
+                    display: block;
+                }
+                textarea {
+                    width: 260px;
+                    height: 80px;
+                    border: 2px solid #f0f0f0;
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    display: block;
+
+                    margin-left: 200px;
+                    background: @coloer;
+                    color: #fff;
+                    width: 50px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 30px;
+
+                }
+
+                ul {
+                    margin-top: 20px;
+                    max-height: 356px;
+                    overflow: hidden;
+
+                    li {
+                        margin-bottom: 10px;
+                        height: 86px;
+
+                        .box1 {
+                            height: 36px;
+                            margin-bottom: 10px;
+
+                            i {
+                                display: inline-block;
+                                height: 36px;
+                                width: 36px;
+                                border-radius: 50%;
+                                background: #f0f0f0;
+                                vertical-align: middle;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            em {
+                                margin-left: 10px;
+                                display: inline-block;
+                                width: 184px;
+                                height: 36px;
+                                line-height: 36px;
+                            }
+                        }
+
+                        p {
+                            margin-top: 15px;
+                            height: 35px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+
+    }
+
+    .mid {
+        height: 156px;
+        margin-top: 20px;
+        overflow: hidden;
+
+        h4 {
+            font-size: 20px;
+            margin: 20px 0 24px 20px;
+            color: #373737;
+        }
+
+        .teacher {
+            width: 238px;
+            position: relative;
+            float: left;
+
+            .touxiang {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background: #d8d8d8;
+                margin: 0 20px 0 30px;
+                vertical-align: top;
+                display: inline-block;
+            }
+
+            .name {
+                display: inline-block;
+
+                mark {
+                    background: none;
+                    font-size: 16px;
+                    color: #333;
+                    line-height: 36px;
+                    font-weight: bold;
+                }
+            }
+
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 50px;
+                background: @coloer;
+                position: absolute;
+                right: 0;
+                top: 5px;
+            }
+
+        }
+
+        article {
+            float: right;
+            width: 840px;
+            height: 60px;
+            margin-right: 36px;
+            line-height: 21px;
+            font-size: 16px;
+        }
+    }
+
+}
+
+#bottom {
+
+    margin-top: 20px;
+    background: #fafafa;
+
+    .type-area {
+        background: #fff;
+
+        p {
+            margin: 0 auto;
+            width: 160px;
+
+            span {
+                display: inline-block;
+                height: 66px;
+                line-height: 66px;
+                width: 80px;
+                text-align: center;
+                font-weight: bold;
+                color: #333;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            .active {
+                background: @coloer;
+                color: #fff;
+            }
+        }
+
+        /* 课程目录 */
+        div {
+            min-height: 1180px;
+            position: relative;
+            display: none;
+
+            &.cur {
+                display: block;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .list {
+                margin: 32px 42px 0 42px;
+
+                .iconfont {
+                    font-size: 12px;
+                    color: #999;
+                    cursor: pointer;
+                }
+
+                h2 {
+                    color: #333;
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin-bottom: 24px;
+
+                    span {
+                        float: right;
+                    }
+                }
+
+                ul {
+                    display: none;
+
+                    li {
+                        font-size: 14px;
+                        color: #333;
+                        height: 24px;
+                        line-height: 24px;
+                        margin-bottom: 20px;
+
+                        a {
+                            float: left;
+                            width: 316px;
+                            margin-left: 18px;
+                        }
+
+                        span {
+                            float: left;
+                            width: 24px;
+                            height: 24px;
+                            background: @coloer;
+                            border-radius: 50%;
+                            font-size: 12px;
+                            color: #fff;
+                            text-align: center;
+                            line-height: 24px;
+                            vertical-align: middle;
+                        }
+
+                        em {
+                            float: left;
+                            width: 46px;
+                            height: 24px;
+                            border-radius: 5px;
+                            text-align: center;
+                            line-height: 24px;
+                        }
+
+                        b {
+                            float: right;
+                            color: #999;
+                        }
+                    }
+                }
+
+                .cur {
+                    display: block;
+                }
+            }
+
+            p {
+                position: absolute;
+                width: 100%;
+                height: 80px;
+                background-color: #fafafa;
+                bottom: 0;
+                text-align: center;
+                line-height: 80px;
+                font-size: 20px;
+                color: @coloer;
+                text-decoration: underline;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+}
+
+#foot {
+    margin-top: 0px;
+}
